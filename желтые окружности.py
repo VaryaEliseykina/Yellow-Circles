@@ -16,7 +16,6 @@ class Example(QWidget):
         self.flag = True
         self.update()
 
-
     def paintEvent(self, event):
         if self.flag:
             painter = QPainter()

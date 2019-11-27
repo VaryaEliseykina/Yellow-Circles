@@ -5,8 +5,6 @@ from PyQt5.QtWidgets import QWidget, QApplication
 from PyQt5.QtGui import QPainter, QColor
 
 
-
-
 class Example(QWidget):
     def __init__(self):
         super().__init__()

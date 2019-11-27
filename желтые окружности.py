@@ -1,5 +1,5 @@
 import sys
-
+import random
 from PyQt5 import uic
 from PyQt5.QtWidgets import QWidget, QApplication
 from PyQt5.QtGui import QPainter, QColor
@@ -22,7 +22,10 @@ class Example(QWidget):
             painter.begin(self)
             painter.setPen(QColor('#fafa00'))
             painter.setBrush(QColor(250, 250, 0))
-            painter.drawEllipse(10, 15, 90, 95)
+            x = random.randint(1, 200)
+            y = random.randint(1, 200)
+            d = random.randint(1, 150)
+            painter.drawEllipse(x, y, x + d, y + d)
             painter.end()
 
 

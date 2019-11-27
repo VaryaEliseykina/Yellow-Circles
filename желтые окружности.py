@@ -22,10 +22,10 @@ class Example(QWidget):
             painter.begin(self)
             painter.setPen(QColor('#fafa00'))
             painter.setBrush(QColor(250, 250, 0))
-            x = random.randint(1, 200)
-            y = random.randint(1, 200)
+            x = random.randint(10, 200)
+            y = random.randint(10, 200)
             d = random.randint(1, 150)
-            painter.drawEllipse(x, y, x + d, y + d)
+            painter.drawEllipse(x, y, d, d)
             painter.end()
 
 
